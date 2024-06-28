@@ -1,4 +1,4 @@
-Description:
+Description:<br/>
 In this project, I was tasked with diagnosing and fixing broken code on an e-commerce website. The site was experiencing various issues, including slow load times, broken links, and malfunctioning forms. My responsibilities included:
 
 Issue Identification: Conducted a thorough audit of the website to identify all broken code and areas of poor performance.
