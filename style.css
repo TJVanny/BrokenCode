@@ -6,8 +6,10 @@ html {
 }
 
 .main-content {
-  position: relative;
+  margin: 0 auto;
+  background-image: url(https://raw.githubusercontent.com/TJVanny/BrokenCode/main/banner-landingpage.jpg);
   top: 5.3125rem; /* To offset for fixed header. */
+  background-size: contain;
 }
 
 .center {
@@ -26,6 +28,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -37,20 +40,21 @@ html {
 /* Header */
 
 header {
-  position: fixed;
-  width: 100%;
-  border-bottom: solid 1px #c6c1c1;
-  background-color: white;
+  height: 85px;
+  padding: 0 30px;
 }
 
 header .content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 1.875rem;
 }
 
 header .logo {
-  flex: 1;
+  color: #4A4A4A;
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
 }
 
 header nav ul {
@@ -59,12 +63,15 @@ header nav ul {
 
 nav li {
   padding-left: 3.5rem;
+  list-style-type: none;
 }
 
 nav a {
+  text-decoration: none;
   vertical-align: bottom;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   color: #4a4a4a;
 }
 
@@ -113,9 +120,9 @@ header .mobile {
 /* Sign Up Section */
 
 #sign-up-section {
+  margin-left: 100px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
 }
 
@@ -137,22 +144,34 @@ header .mobile {
 
 #sign-up-cta h1 {
   font-size: 3.125rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 12px;
 }
 
 #sign-up-cta h2 {
-  font-size: 2.25rem;
+  font-size: 50px;
+  font-weight: 400;
 }
 
 #sign-up-cta span strong {
   font-weight: bold;
+  font-size: 20px;
+  font-family: 'Roboto'
+  line-height: 1.4;
+  font-weight: 400px;
 }
 
 #sign-up-cta .cursive {
+  margin-top: 32px;
+  margin-bottom: 0;
   font-family: "Damion", cursive;
 }
 
 #sign-up-cta .striking {
-  font-family: "Rubik", sans-serif;
+  font-size: 50px;
+  margin-top: 0;
   padding-bottom: .75rem;
 }
 
@@ -217,10 +236,10 @@ header .mobile {
 }
 
 .feature {
+  padding: 32px;
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
   background-color: white;
+  margin: 0px 1.25rem;
 }
 
 .feature .image-container {
@@ -229,7 +248,13 @@ header .mobile {
   margin: 0 auto;
 }
 
+.center {
+  text-align: center;
+}
+
 .feature h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
@@ -241,6 +266,7 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 890px) {
@@ -294,6 +320,7 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
@@ -334,11 +361,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -347,7 +374,7 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
